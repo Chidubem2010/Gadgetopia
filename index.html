@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gadgetopia</title>
+    <link rel="stylesheet" href="CSS/style.css ">
+    <link rel="shortcut icon" href="Images/iphone-14-pro-max-silver.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body>
+    <section id="home" class="header">
+        <nav>
+            <h1>Nexus</h1>
+            <form id="searchForm">
+                <!-- <label for="search"></label> -->
+                <input id="searchInput" placeholder="Search Your Accesoriess .... " type="search" name="search" id="search">
+                <button type="submit"><i class="bi bi-search"></i></button>
+            </form>
+        <ul>
+            <li><a href="#home"><i class="bi bi-house"></i></a></li>
+            <li><a><i class="bi bi-person-circle" onclick="showLogin()"></i></a></li>
+            <li><a><i class="bi bi-cart4" onclick="showMenu()"><span  class="quant">0</span></i></a></li>
+        </ul>
+        <div id="login" class="login">
+            <i class="bi bi-x" onclick="hideLogin()"></i>
+            <div class="login-cont">
+                <h1>Login</h1>
+                <div class="login-form">
+                    <form>
+                        <i class="bi bi-person"></i><input placeholder="Enter Your Full Name" type="text" required>
+                        <i class="bi bi-envelope"></i><input placeholder="Enter Your Email" type="email" required>
+                        <i class="bi bi-lock"></i><input placeholder="Enter Your Password" type="password" required>
+                        <button>Sign In</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Cart starts -->
+        <div id="carts" class="cart">
+            <i class="bi bi-x" onclick="hideMenu()"></i>
+            <h1>Your cart</h1>  
+            <button>Check Out</button>
+           </div>
+           <!-- ends here -->
+        </div>
+        </nav>
+        <div>
+        <div class="text-box">
+            <h1>Save up to 30% of your money today</h1>
+    </div>
+    <div class="slides">
+        <img src="Images/iphone-14-pro-max-silver.png" class="mySlides" height="400px" width="400px">
+        <img src="Images/baeus wireless  bluetooth.webp" class="mySlides" height="400px" width="400px">
+        <img src="Images/mac-book laptop.webp" class="mySlides" height="400px" width="400px">
+        <img src="Images/i pad air.webp" class="mySlides" height="400px" width="400px">
+        <img src="Images/xiaomi tablet.webp" class="mySlides" height="400px" width="400px">
+        <img src="Images/Onyx.jpg" class="mySlides" height="400px" width="400px">
+        <img src="Images/nikon camera.avif" class="mySlides" height="400px" width="400px">
+        <img src="Images/Ps5.jpg" class="mySlides" height="400px" width="400px">
+        <img src="Images/solar panel power banks.webp" class="mySlides" height="400px" width="400px">
+        <img src="Images/gold touchscreen laptop.png" class="mySlides" height="400px" width="400px">
+    </div>
+        </div>
+    </section>
+    <section class="hero-sect" id="Phones">
+        <h1>Phones</h1>
+        <div class="cards-cont">
+            <!-- <button class="prev-btn"><i class="bi bi-chevron-left"></i></button> -->
+            <div class="cards" id="cards">
+                <img src="Images/iphone-14-pro-max-silver.png">
+                <h5>I-phone 14 Pro-max Silver</h5>
+                <p>$1,432.33</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+            <div class="cards">
+                <img src="Images/Samsung Galaxy S23.png">
+                <h5>Samsung Galaxy S23</h5>
+                <p>$4,842.98</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+            <div class="cards">
+                <img src="Images/tenco phantom v flip.png">
+                <h5>Tecno Phantom V Flip</h5>
+                <p>$1215.54</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+        </div>
+        <!-- <button class="next-btn"><i class="bi bi-chevron-right"></i></button> -->
+        </div>
+    </section>
+    <section class="hero-sect" id="Head Phones">
+        <h1>Head Phones</h1>
+        <div class="cards-cont">
+            <div class="cards">
+                <img src="Images/noise cancelling headsets.jpg">
+                <h5> Wireless Bluetooth Foldable Headset</h5>
+                <p>$11.61</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+            <div class="cards">
+                <img src="Images/sony headset.jpg">
+                <h5>Sony Gaming Headsets</h5>
+                <p>$364.83</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+            <div class="cards">
+                <img src="Images/baeus wireless  bluetooth.webp">
+                <h5>Beaus Bowie Wireless Headset</h5>
+                <p>$100.99</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <section id="Laptops" class="hero-sect">
+        <h1>Laptops</h1>
+        <div class="cards-cont">
+            <div class="cards">
+                <img src="Images/mac-book laptop.webp">
+                <h5>MacBook Pro-M1</h5>
+                <p>$3998.90</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+            <div class="cards">
+                <img src="Images/lenovo think pad.jpg">
+                <h5>Lenovo ThinkPad P16 </h5>
+                <p>$7975.39</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+                <div class="cards">
+                <img src="Images/hp touchscreen.jpg">
+                <h5>HP Elite x2 G8 13</h5>
+                <p>$9363.45</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <section id="I-pads" class="hero-sect">
+        <h1>I-pads</h1>
+        <div class="cards-cont">
+            <div class="cards">
+                <img src="Images/i pad air.webp">
+                <h5>iPad Air</h5>
+                <p>$1185.22</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+            <div class="cards">
+                <img src="Images/i pad pro M2.webp">
+                <h5>I-pad pro M2</h5>
+                <p>$1623.30</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+                <div class="cards">
+                <img src="Images/ipad pro 11.jpg">
+                <h5>Apple 11-inch iPad Pro</h5>
+                <p>$1506.07</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="Tablets" class="hero-sect">
+        <h1>Tablets</h1>
+        <div class="cards-cont">
+            <div class="cards">
+                <img src="Images/xiaomi tablet.webp">
+                <h5>Xiaomi Pad 6</h5>
+                <p>$443.89</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+            <div class="cards">
+                <img src="Images/teclat.webp">
+                <h5>Teclast T50 Pro Helio G99</h5>
+                <p>$245.99</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+                <div class="cards">
+                <img src="Images/samsung tablet.jpg">
+                <h5>Samsung Galaxy Tab S7</h5>
+                <p>$580.67</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="Audio Speakers" class="hero-sect">
+        <h1>Audio Speakers</h1>
+        <div class="cards-cont">
+            <div class="cards">
+                <img src="Images/Onyx.jpg">
+                <h5>Onyx Studio 8</h5>
+                <p>$199.95</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+            <div class="cards">
+                <img src="Images/yamhama speaker.jpg">
+                <h5>Yahama Hs8s Studio Subwoofer</h5>
+                <p>$1677.50</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+                <div class="cards">
+                <img src="Images/M audio.webp">
+                <h5>M-Audio Carbon Monitor</h5>
+                <p>$296.79</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="Camera" class="hero-sect">
+        <h1>Camera</h1>
+        <div class="cards-cont">
+            <div class="cards">
+                <img src="Images/sony camera.avif">
+                <h5>Sony a6400 Mirrorless Camera</h5>
+                <p>$1,298.00</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+            <div class="cards">
+                <img src="Images/Handheld fundus.webp">
+                <h5>Portable Fundus Camera</h5>
+                <p>$9,570.00</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+                <div class="cards">
+                <img src="Images/nikon camera.avif">
+                <h5>Nikon D500 DSLR Camera</h5>
+                <p>$2,669.95</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+            </div>
+    </section>
+    <section id="Game Consoles" class="hero-sect">
+        <h1>Game Consoles</h1>
+        <div class="cards-cont">
+            <div class="cards">
+                <img src="Images/X-Box.png">
+                <h5>X-Box Game Console</h5>
+                <p>$335.50</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+            <div class="cards">
+                <img src="Images/Ps5.jpg">
+                <h5>Play Station 5 Console</h5>
+                <p>$587.12</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+                <div class="cards">
+                <img src="Images/nintendo console.jpg">
+                <h5>Nintendo Switch</h5>
+                <p>$341.95</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="Power Banks" class="hero-sect">
+        <h1>Power Banks</h1>
+        <div class="cards-cont">
+            <div class="cards">
+                <img src="Images/Power Bank Dual.jpg">
+                <h5> MAh Power Bank Dual Battery</h5>
+                <p>$25.82</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+            <div class="cards">
+                <img src="Images/solar panel power banks.webp">
+                <h5>Solar Power Bank</h5>
+                <p>$89.95</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+                <div class="cards">
+                <img src="Images/oraimo power bank.jpg">
+                <h5>$26.43</h5>
+                <p>Oraimo Massive Power Bank</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="Watches" class="hero-sect">
+        <h1>Watches</h1>
+        <div class="cards-cont">
+            <div class="cards">
+                <img src="Images/diamond flower watch.webp">
+                <h5>Diamond Flower </h5>
+                <p>$13901.67</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+            <div class="cards">
+                <img src="Images/utrla smart watch.webp">
+                <h5>T800 Ultra Smart Watch</h5>
+                <p>$11.77</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+                <div class="cards">
+                <img src="Images/gold touchscreen laptop.png">
+                <h5>Touch Screen Smart Watch</h5>
+                <p>$20.46</p>
+                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Our Categories</h3>
+                <a href="#home"><i class="bi bi-chevron-right icon"></i>Home</a>
+                <a href="#Phones"><i class="bi bi-chevron-right"></i>Phones</a>
+                <a href="#Head Phones"><i class="bi bi-chevron-right"></i>Head Phones</a>
+                <a href="#Laptops"><i class="bi bi-chevron-right"></i>Laptops</a>
+                <a href="#I-pads"><i class="bi bi-chevron-right"></i>I-pads</a>
+                <a href="#Tablets"><i class="bi bi-chevron-right"></i>Tablets</a>
+                <a href="#Audio Speakers"><i class="bi bi-chevron-right"></i>Audio Speakers</a>
+                <a href="#Camera"><i class="bi bi-chevron-right"></i>Cameras</a>
+                <a href="#Game Consoles"><i class="bi bi-chevron-right"></i>Game Consoles</a>
+                <a href="#Power Banks"><i class="bi bi-chevron-right"></i>Power Banks</a>
+                <a href="#Watches"><i class="bi bi-chevron-right"></i>Watches</a>
+            </div>
+            <div class="box">
+                <h3>Contact Us</h3>
+                <a><i class="bi bi-telephone"></i>08030469763</a>
+                <a><i class="bi bi-telephone"></i>08034353130</a>
+                <a><i class="bi bi-envelope"></i>daimianpriest@gmail.com</a>
+                <a><i class="bi bi-envelope"></i>momentousamaze@gmail.com</a>
+            </div>
+            <div class="box">
+                <h3>Follow us on</h3>
+                <a><i class="bi bi-facebook"></i>Facebook</a>
+                <a><i class="bi bi-instagram"></i>Instragram</a>
+                <a><i class="bi bi-twitter"></i>Twitter</a>
+                <a></a>
+                <a></a>
+                <a></a>
+            </div>
+        </div>
+        <marquee behavior="alternate" direction="horizontal"><div class="credit">Credit to <span>Chidubem Amu</span> All rights resreved</div></marquee>
+    </section>
+    <script src="JS/slider.js"></script>
+    <script src="JS/cart.js"></script>
+    <script src="JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</body>
+</html>
