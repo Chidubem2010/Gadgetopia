@@ -18,7 +18,15 @@
                 <button type="submit"><i class="bi bi-search"></i></button>
             </form>
         <ul>
-            <li><a href="#home"><i class="bi bi-house"></i></a></li>
+            <li><a href="#home"><i class="bi bi-house"></i></a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="">Mission</a></li>
+                        <li><a href="">Vision</a></li>
+                        <li><a href="">Team</a></li>
+                    </ul>
+                </div>
+            </li>
             <li><a><i class="bi bi-person-circle" onclick="showLogin()"></i></a></li>
             <li><a><i class="bi bi-cart4" onclick="showMenu()"><span  class="quant">0</span></i></a></li>
         </ul>
@@ -29,9 +37,9 @@
                 <div class="login-form">
                     <form>
                         <i class="bi bi-person"></i><input placeholder="Enter Your Full Name" type="text" required>
-                        <i class="bi bi-envelope"></i><input placeholder="Enter Your Email" type="email" required>
-                        <i class="bi bi-lock"></i><input placeholder="Enter Your Password" type="password" required>
-                        <button>Sign In</button>
+                        <!-- <i class="bi bi-envelope"></i><input placeholder="Enter Your Email" type="email" required> -->
+                        <i class="bi bi-lock"></i><input placeholder="Enter Your Password" id="password" type="password" required>
+                        <button onclick="checkPassword()">Sign In</button>
                     </form>
                 </div>
             </div>
@@ -66,7 +74,7 @@
     <section class="hero-sect" id="Phones">
         <h1>Phones</h1>
         <div class="cards-cont">
-            <!-- <button class="prev-btn"><i class="bi bi-chevron-left"></i></button> -->
+            <!-- <button class="prev-btn"><i class="bi bi-chevron-left"></i></button> -->  
             <div class="cards" id="cards">
                 <img src="Images/iphone-14-pro-max-silver.png">
                 <h5>I-phone 14 Pro-max Silver</h5>

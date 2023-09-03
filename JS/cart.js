@@ -14,6 +14,16 @@ function hideLogin(){
     login.style.top = "-100vh";
 }
 
+function checkPassword() {
+    let password = document.getElementById("password");
+    let passwordText = password.value;
+    if(passwordText == "Gadgetopia") {
+        return true;
+    }
+    alert("Acess denied! Incorrect password!");
+    return false;
+}
+
 // let products = [
 //     {
 //         id: 1,

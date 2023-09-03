@@ -115,7 +115,10 @@ nav ul li a{
     right: 0;
     /* text-align: center; */
     z-index: 100;
-    background: linear-gradient(rgba(32, 32, 30, 0.9),rgba(32, 32, 30, 0.9)), url(igbo.jpg);
+    background: url(abstract-red-metallic-light-cyber-polygon-slash-dark-grey-shadow-design-futuristic-technology-background_33869-1747.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     transition: 0.9s;
 }
 .login .bi{
@@ -124,34 +127,42 @@ nav ul li a{
     cursor: pointer;
     color: #fff;
 }
-.login-cont{
-    display: block;
-}
 .login-cont h1{
+    margin-top: 3%;
     color: #fff;
     font-size: 30pt;
     text-align: center;
     /* text-decoration: underline; */
 }
 .login-cont h1::after{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     background: white;
-    display: block;
-    content: '_________';
-    font-size: 60px;
-    line-height: 0px;
-    line-height: 0px;
-    height: 0px;
-    margin: 5px auto;
+    /* display: block; */
+    content: '..';
+    /* font-size: 60px; */
+    line-height: 5px;
+    /* line-height: 0px; */
+    height: 2px;
+    /* margin: 5px auto; */
     width: 100%;
 }
+.login-cont h1 :hover ::after{
+    width: 0;
+}
 .login-form{
-    background-color: grey;
-    width: 40%;
+    background-color: transparent;
+    opacity: .1s;
+    width: 35%;
     position: absolute;
-    left: 30%;
+    left: 31.5%;
     top: 20%;
     height: 500px;
+    border-radius: 15px;
+    backdrop-filter: blur(35px);
+    border: 2px solid gray;
 }
 .login-form form{
     display: flex;
@@ -159,17 +170,26 @@ nav ul li a{
     align-items: center;
     justify-content: center;
 }
+.login-form form .bi{
+    float: left;
+}
 .login-form form input{
     width: 350px;
     height: 50px;
     font-size: 20px;
-    background: #eaeaea;
+    backdrop-filter: blur(35px);
+    background-color: transparent;
     border: 1px solid white;
+    color: white;
 }
 .login-form form button{
     cursor: pointer;
     margin-top: 30px;
-    padding: 10px 35px;
+    padding: 20px 45px;
+    width: 100%;
+    background-color: white;
+    border-radius: 40px;
+    border: none;
 }
 /* Chidozie start from here */
 .cart{  
@@ -448,8 +468,39 @@ form p a:hover{
     margin-right: 10px;
 }
 /* responsive */
-@media (max-width:700px) {
+@media (max-width:412px) {
+    nav{
+        width: 100%;
+        /* display: flex;
+        flex-direction: column; */
+        height: 150px;
+    }
+    nav h1{
+        font-size: 10pt;
+        color: black;
+    }
+    #searchForm{
+        width: 200px;
+    }
+    #searchForm .bi{
+        display: none;
+    }
+    #searchForm input{
+        /* height: 100%; */
+        width: 200px;
+    }
+    .quant{
+        position: absolute;
+        top: 55px;
+        right: 30px;
+    }
     .cards-cont{
+        display: flex;
         flex-direction: column;
     }
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
