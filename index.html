@@ -28,10 +28,10 @@
                 </div>
             </li>
             <li><a><i class="bi bi-person-circle" onclick="showLogin()"></i></a></li>
-            <li><a><i class="bi bi-cart4" onclick="showMenu()"><span  class="quant">0</span></i></a></li>
+            <li><a><i class="bi bi-cart4" onclick="showMenu()"><span id="quant"  class="quant">0</span></i></a></li>
         </ul>
         <div id="login" class="login">
-            <i class="bi bi-x" onclick="hideLogin()"></i>
+            <!-- <i class="bi bi-x" onclick="hideLogin()"></i> -->
             <div class="login-cont">
                 <h1>Login</h1>
                 <div class="login-form">
@@ -47,8 +47,224 @@
         <!-- Cart starts -->
         <div id="carts" class="cart">
             <i class="bi bi-x" onclick="hideMenu()"></i>
-            <h1>Your cart</h1>  
-            <button>Check Out</button>
+            <h1>Your cart</h1> 
+            <div id="bad" class="cart-area">
+            <div id="iPhone" class="cart-cont">
+                <img src="Images/iphone-14-pro-max-silver.png" alt="">
+                <div class="cart-details-2">
+                <h4>I-phone 14 Pro-max Silver</h4>
+                <p>$1,432.33</p>
+                <!-- <i class="bi bi-x" onclick="delItem()"></i> -->
+            </div>
+            </div>
+            <div id="samsung" class="cart-cont">
+                <img src="Images/Samsung Galaxy S23.png" alt="">
+                <div class="cart-details-2">
+                    <h4>Samsung Galaxy S23</h4>
+                    <p>$4,842.98</p>
+                </div>
+            </div>
+            <div id="tecno" class="cart-cont">
+                <img src="Images/tenco phantom v flip.png" alt="">
+                <div class="cart-details-2">
+                    <h4>Tecno Phantom V Flip</h4>
+                    <p>$1215.54</p>
+                </div>
+            </div>
+            <div id="NCHeadSet" class="cart-cont">
+                <img src="Images/noise cancelling headsets.jpg" alt="">
+                <div class="cart-details-2">
+                    <h4> Wireless Bluetooth Foldable Headset</h4>
+                    <p>$11.61</p>
+                </div>
+            </div>
+            <div id="SonyHS" class="cart-cont">
+                <img src="Images/sony headset.jpg" alt="">
+                <div class="cart-details-2">
+                    <h4>Sony Gaming Headsets</h4>
+                    <p>$364.83</p>
+                </div>
+            </div>
+            <div id="BeausHS" class="cart-cont">
+                <img src="Images/baeus wireless  bluetooth.webp" alt="">
+                <div class="cart-details-2">
+                    <h4>Beaus Bowie Wireless Headset</h4>
+                    <p>$100.99</p>
+                </div>
+            </div>
+            <div id="MacBook" class="cart-cont">
+                <img src="Images/mac-book laptop.webp" alt="">
+                <div class="cart-details-2">
+                    <h4>MacBook Pro-M1</h4>
+                    <p>$3998.90</p>
+                </div>
+            </div>
+            <div id="Lenovo" class="cart-cont">
+                <img src="Images/lenovo think pad.jpg" alt="">
+                <div class="cart-details-2">
+                    <h4>Lenovo ThinkPad P16 </h4>
+                    <p>$7975.39</p>
+                </div>
+            </div>
+            <div id="hp" class="cart-cont">
+                <img src="Images/hp touchscreen.jpg" alt="">
+                <div class="cart-details-2">
+                    <h4>HP Elite x2 G8 13</h4>
+                    <p>$9363.45</p>
+                </div>
+            </div>
+            <div id="iPadAir" class="cart-cont">
+                <img src="Images/i pad air.webp" alt="">
+                <div class="cart-details-2">
+                    <h4>iPad Air</h4>
+                    <p>$1185.22</p>
+                </div>
+            </div>
+            <div id="iPadPro" class="cart-cont">
+                <img src="Images/i pad pro M2.webp" alt="">
+                <div class="cart-details-2">
+                    <h4>I-pad pro M2</h4>
+                    <p>$1623.30</p>
+                </div>
+            </div>
+            <div id="iPad11" class="cart-cont">
+                <img src="Images/ipad pro 11.jpg" alt="">
+                <div class="cart-details-2">
+                    <h4>Apple 11-inch iPad Pro</h4>
+                    <p>$1506.07</p>
+                </div>
+            </div>
+            <div id="tab1" class="cart-cont">
+                <img src="Images/xiaomi tablet.webp" alt="">
+                <div class="cart-details-2">
+                    <h4>Xiaomi Pad 6</h4>
+                    <p>$443.89</p>
+                </div>
+            </div>
+            <div id="tab2" class="cart-cont">
+                <img src="Images/teclat.webp" alt="">
+                <div class="cart-details-2">
+                    <h4>Teclast T50 Pro Helio G99</h4>
+                    <p>$245.99</p>
+                </div>
+            </div>
+            <div id="tab3" class="cart-cont">
+                <img src="Images/samsung tablet.jpg" alt="">
+                <div class="cart-details-2">
+                    <h4>Samsung Galaxy Tab S7</h4>
+                    <p>$580.67</p>
+                </div>
+            </div>
+            <div id="sound1" class="cart-cont">
+                <img src="Images/Onyx.jpg" alt="">
+                <div class="cart-details-2">
+                    <h4>Onyx Studio 8</h4>
+                    <p>$199.95</p>
+                </div>
+            </div>
+            <div id="sound2" class="cart-cont">
+                <img src="Images/yamhama speaker.jpg" alt="">
+                <div class="cart-details-2">
+                    <h4>Yahama Hs8s Studio Subwoofer</h4>
+                    <p>$1677.50</p>
+                </div>
+            </div>
+            <div id="sound3" class="cart-cont">
+                <img src="Images/M audio.webp" alt="">
+                <div class="cart-details-2">
+                    <h4>M-Audio Carbon Monitor</h4>
+                    <p>$296.79</p>
+                </div>
+            </div>
+            <div id="cam1" class="cart-cont">
+                <img src="Images/sony camera.avif" alt="">
+                <div class="cart-details-2">
+                    <h4>Sony a6400 Mirrorless Camera</h4>
+                    <p>$1,298.00</p>
+                </div>
+            </div>
+            <div id="cam2" class="cart-cont">
+                <img src="Images/Handheld fundus.webp" alt="">
+                <div class="cart-details-2">
+                    <h4>Portable Fundus Camera</h4>
+                    <p>$9,570.00</p>
+                </div>
+            </div>
+            <div id="cam3" class="cart-cont">
+                <img src="Images/nikon camera.avif" alt="">
+                <div class="cart-details-2">
+                    <h4>Nikon D500 DSLR Camera</h4>
+                    <p>$2,669.95</p>
+                </div>
+            </div>
+            <div id="game1" class="cart-cont">
+                <img src="Images/X-Box.png" alt="">
+                <div class="cart-details-2">
+                    <h4>X-Box Game Console</h4>
+                    <p>$335.50</p>
+                </div>
+            </div>
+            <div id="game2" class="cart-cont">
+                <img src="Images/Ps5.jpg" alt="">
+                <div class="cart-details-2">
+                    <h4>Play Station 5 Console</h4>
+                    <p>$587.12</p>
+                </div>
+            </div>
+            <div id="game3" class="cart-cont">
+                <img src="Images/nintendo console.jpg" alt="">
+                <div class="cart-details-2">
+                    <h4>Nintendo Switch</h4>
+                    <p>$341.95</p>
+                </div>
+            </div>
+            <div id="pbank1" class="cart-cont">
+                <img src="Images/Power Bank Dual.jpg" alt="">
+                <div class="cart-details-2">
+                    <h4> MAh Power Bank Dual Battery</h4>
+                    <p>$25.82</p>
+                </div>
+            </div>
+            <div id="pbank2" class="cart-cont">
+                <img src="Images/solar panel power banks.webp" alt="">
+                <div class="cart-details-2">
+                    <h4>Solar Power Bank</h4>
+                    <p>$89.95</p>
+                </div>
+            </div>
+            <div id="pbank3" class="cart-cont">
+                <img src="Images/oraimo power bank.jpg">
+                <div class="cart-details">
+                <h4>Oraimo Massive Power Bank</h4>
+                <p>$26.43</p>
+                </div>
+            </div>
+            <div id="watch1" class="cart-cont">
+                <img src="Images/gold touchscreen laptop.png" alt="">
+                <div class="cart-details-2">
+                    <h4>Touch Screen Smart Watch</h4>
+                    <p>$20.46</p>
+                </div>
+            </div>
+            <div id="watch2" class="cart-cont">
+                <img src="Images/diamond flower watch.webp">
+                <div class="cart-details-2">
+                <h4>Diamond Flower </h4>
+                <p>$13901.67</p>
+                </div>
+            </div>
+            <div id="watch3" class="cart-cont">
+                <img src="Images/utrla smart watch.webp">
+                <div class="cart-details-2">
+                <h4>T800 Ultra Smart Watch</h4>
+                <p>$11.77</p>
+                </div>
+            </div>
+        </div>
+            <div class="check">
+            <button class="check-btn">Check Out</button>
+            <button onclick="delItem()" id="bad" class="clear-btn">Clear Cart</button>
+            </div>
            </div>
            <!-- ends here -->
         </div>
@@ -79,19 +295,19 @@
                 <img src="Images/iphone-14-pro-max-silver.png">
                 <h5>I-phone 14 Pro-max Silver</h5>
                 <p>$1,432.33</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="show14ProMax()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
             <div class="cards">
                 <img src="Images/Samsung Galaxy S23.png">
                 <h5>Samsung Galaxy S23</h5>
                 <p>$4,842.98</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showS23()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
             <div class="cards">
                 <img src="Images/tenco phantom v flip.png">
                 <h5>Tecno Phantom V Flip</h5>
                 <p>$1215.54</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showVflip()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
         </div>
         <!-- <button class="next-btn"><i class="bi bi-chevron-right"></i></button> -->
         </div>
@@ -103,19 +319,19 @@
                 <img src="Images/noise cancelling headsets.jpg">
                 <h5> Wireless Bluetooth Foldable Headset</h5>
                 <p>$11.61</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showNCHeadSet()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
             <div class="cards">
                 <img src="Images/sony headset.jpg">
                 <h5>Sony Gaming Headsets</h5>
                 <p>$364.83</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showSonyHS()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
             <div class="cards">
                 <img src="Images/baeus wireless  bluetooth.webp">
                 <h5>Beaus Bowie Wireless Headset</h5>
                 <p>$100.99</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showBeausHS()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
         </div>
     </section>
@@ -126,19 +342,19 @@
                 <img src="Images/mac-book laptop.webp">
                 <h5>MacBook Pro-M1</h5>
                 <p>$3998.90</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showMacBook()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
             <div class="cards">
                 <img src="Images/lenovo think pad.jpg">
                 <h5>Lenovo ThinkPad P16 </h5>
                 <p>$7975.39</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showLenovo() "><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
                 <div class="cards">
                 <img src="Images/hp touchscreen.jpg">
                 <h5>HP Elite x2 G8 13</h5>
                 <p>$9363.45</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showhp()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
         </div>
     </section>
@@ -149,19 +365,19 @@
                 <img src="Images/i pad air.webp">
                 <h5>iPad Air</h5>
                 <p>$1185.22</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showiPadAir()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
             <div class="cards">
                 <img src="Images/i pad pro M2.webp">
                 <h5>I-pad pro M2</h5>
                 <p>$1623.30</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showiPadPro()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
                 <div class="cards">
                 <img src="Images/ipad pro 11.jpg">
                 <h5>Apple 11-inch iPad Pro</h5>
                 <p>$1506.07</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showiPad11()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
             </div>
         </div>
@@ -173,19 +389,19 @@
                 <img src="Images/xiaomi tablet.webp">
                 <h5>Xiaomi Pad 6</h5>
                 <p>$443.89</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showtab1()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
             <div class="cards">
                 <img src="Images/teclat.webp">
                 <h5>Teclast T50 Pro Helio G99</h5>
                 <p>$245.99</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showtab2()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
                 <div class="cards">
                 <img src="Images/samsung tablet.jpg">
                 <h5>Samsung Galaxy Tab S7</h5>
                 <p>$580.67</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showtab3()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
             </div>
         </div>
@@ -197,19 +413,19 @@
                 <img src="Images/Onyx.jpg">
                 <h5>Onyx Studio 8</h5>
                 <p>$199.95</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showsound1()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
             <div class="cards">
                 <img src="Images/yamhama speaker.jpg">
                 <h5>Yahama Hs8s Studio Subwoofer</h5>
                 <p>$1677.50</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showsound2()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
                 <div class="cards">
                 <img src="Images/M audio.webp">
                 <h5>M-Audio Carbon Monitor</h5>
                 <p>$296.79</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showsound3()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
             </div>
         </div>
@@ -221,19 +437,19 @@
                 <img src="Images/sony camera.avif">
                 <h5>Sony a6400 Mirrorless Camera</h5>
                 <p>$1,298.00</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showcam1()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
             <div class="cards">
                 <img src="Images/Handheld fundus.webp">
                 <h5>Portable Fundus Camera</h5>
                 <p>$9,570.00</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showcam2()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
                 <div class="cards">
                 <img src="Images/nikon camera.avif">
                 <h5>Nikon D500 DSLR Camera</h5>
                 <p>$2,669.95</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showcam3()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
             </div>
     </section>
@@ -244,19 +460,19 @@
                 <img src="Images/X-Box.png">
                 <h5>X-Box Game Console</h5>
                 <p>$335.50</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showgame1()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
             <div class="cards">
                 <img src="Images/Ps5.jpg">
                 <h5>Play Station 5 Console</h5>
                 <p>$587.12</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showgame2()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
                 <div class="cards">
                 <img src="Images/nintendo console.jpg">
                 <h5>Nintendo Switch</h5>
                 <p>$341.95</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showgame3()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
             </div>
         </div>
@@ -268,19 +484,19 @@
                 <img src="Images/Power Bank Dual.jpg">
                 <h5> MAh Power Bank Dual Battery</h5>
                 <p>$25.82</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showpbank1()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
             <div class="cards">
                 <img src="Images/solar panel power banks.webp">
                 <h5>Solar Power Bank</h5>
                 <p>$89.95</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showpbank2()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
                 <div class="cards">
                 <img src="Images/oraimo power bank.jpg">
-                <h5>$26.43</h5>
-                <p>Oraimo Massive Power Bank</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <h5>Oraimo Massive Power Bank</h5>
+                <p>$26.43</p>
+                <button onclick="showpbank3()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
             </div>
         </div>
@@ -292,19 +508,19 @@
                 <img src="Images/diamond flower watch.webp">
                 <h5>Diamond Flower </h5>
                 <p>$13901.67</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showwatch2()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
             <div class="cards">
                 <img src="Images/utrla smart watch.webp">
                 <h5>T800 Ultra Smart Watch</h5>
                 <p>$11.77</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showwatch3()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
                 <div class="cards">
                 <img src="Images/gold touchscreen laptop.png">
                 <h5>Touch Screen Smart Watch</h5>
                 <p>$20.46</p>
-                <button><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button onclick="showwatch1()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
             </div>
         </div>

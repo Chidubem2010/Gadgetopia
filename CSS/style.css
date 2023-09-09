@@ -8,6 +8,14 @@
     100%{opacity: 1;}
     0%{opacity: 0;}
   }
+::-webkit-scrollbar{
+    background: transparent;
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: gray;
+    border-radius: 60px;
+  }
 *{
     margin: 0;
     padding: 0;
@@ -104,14 +112,15 @@ nav ul li a{
     height: 15px;
     width: 15px;
     /* padding: 5px 5px; */
-    font-size: 5pt;
+    font-size: 7pt;
+    text-align: center;
 }
 .login{
     display: block;
     position: absolute;
     height: 100vh;
     width: 100%;
-    top: 0;
+    top: -100vh;
     right: 0;
     /* text-align: center; */
     z-index: 100;
@@ -198,10 +207,13 @@ nav ul li a{
     height: 100vh;
     width: 350px;
     top: 0;
-    right: 0;
+    right: -350px;
     z-index: 100;
     background: white;
     transition: 0.9s;
+    overflow-y: scroll;
+    border: 1px solid grey;
+
 }
 .cart .bi{
     font-size: 22pt;
@@ -209,13 +221,12 @@ nav ul li a{
     cursor: pointer;
 }
 .cart button{
-    position: absolute;
-    bottom: 10px;
-    padding: 10px 35px;
+    margin: 20px;
+    padding: 10px 25px;
     width: 90%;
-    margin-left: 20px;
+    margin-left: 25px;
     cursor: pointer;
-    background-color: black;
+    /* background-color: black; */
     color: white;
     border: 1px solid white;
 }
@@ -334,6 +345,7 @@ nav ul li a{
 .cards h5{
     color: black;
     margin-top: 20px;
+    text-align: center;
 }
 .cards p{
     color: gray;
@@ -467,6 +479,55 @@ form p a:hover{
 .box a .bi{
     margin-right: 10px;
 }
+.cart-cont{
+    /* background-color: #eaeaea; */
+    /* box-shadow: 0 1px 4px hsl(0, 2%, 25%); */
+    width: 85%;
+    margin-left: 40px;
+    display: none;
+}
+.cart-cont img{
+    position: absolute;
+    left: 4px;
+    /* margin-top: 30px; */
+    width: 40px;
+    height: 40px;
+    /* margin-right: 13px; */
+}
+.card h5{
+    text-align: center;
+}
+.cart-details-2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.cart-details-2 h4{
+    width: 100%;
+    text-align: right;
+    /* margin-right: 65px; */
+    
+    /* float: right; */
+}
+.cart-details-2 p{
+    /* margin-right: 65px; */
+    width: 100%;
+    text-align: right;
+    color: grey;
+}
+.cart-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.clear-btn{
+    background: rgb(221, 43, 43);
+}
+.check-btn{
+    background: black;
+}
 /* responsive */
 @media (max-width:412px) {
     nav{
@@ -491,8 +552,8 @@ form p a:hover{
     }
     .quant{
         position: absolute;
-        top: 55px;
-        right: 30px;
+        top: 53px;
+        right: 50px;
     }
     .cards-cont{
         display: flex;
@@ -501,6 +562,9 @@ form p a:hover{
     .cards{
         display: flex;
         flex-direction: column;
+    }
+    .header{
+        width: 100%;
     }
 
 }
