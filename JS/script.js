@@ -17,9 +17,9 @@ const input = document.getElementById('searchInput');
 form.addEventListener('submit', function(e){
     e.preventDefault();
     const searchTerm = input.value;
-    searchTerm(searchTerm);
+    searchTerm(google);
 });
 function search(term){
-    console.log('Performing search for term:', term);
+    alert('Performing search for term:', term);
     input.value = "";
 }

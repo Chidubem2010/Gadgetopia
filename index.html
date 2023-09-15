@@ -6,27 +6,18 @@
     <title>Gadgetopia</title>
     <link rel="stylesheet" href="CSS/style.css ">
     <link rel="shortcut icon" href="Images/iphone-14-pro-max-silver.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="CSS/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.css"/>
 </head>
 <body>
     <section id="home" class="header">
         <nav>
             <h1>Gadgetopia</h1>
-            <form id="searchForm">
-                <!-- <label for="search"></label> -->
-                <input id="searchInput" placeholder="Search Your Accesoriess .... " type="search" name="search" id="search">
-                <button type="submit"><i class="bi bi-search"></i></button>
-            </form>
+            <div class="search-box">
+                <input type="search" name="" id="search-input" placeholder="Search Item">
+                <i class="bi bi-search"></i>
+            </div>
         <ul>
-            <li><a href="#home"><i class="bi bi-house"></i></a>
-                <div class="sub-menu-1">
-                    <ul>
-                        <li><a href="">Mission</a></li>
-                        <li><a href="">Vision</a></li>
-                        <li><a href="">Team</a></li>
-                    </ul>
-                </div>
-            </li>
+            <li><a href="#home"><i class="bi bi-house"></i></a></li>
             <li><a><i class="bi bi-person-circle" onclick="showLogin()"></i></a></li>
             <li><a><i class="bi bi-cart4" onclick="showMenu()"><span id="quant"  class="quant">0</span></i></a></li>
         </ul>
@@ -46,7 +37,7 @@
         </div>
         <!-- Cart starts -->
         <div id="carts" class="cart">
-            <i class="bi bi-x" onclick="hideMenu()"></i>
+            <!-- <i class="bi bi-x" onclick="hideMenu()"></i> -->
             <h1>Your cart</h1> 
             <div id="bad" class="cart-area">
             <div id="iPhone" class="cart-cont">
@@ -262,12 +253,26 @@
             </div>
         </div>
             <div class="check">
-            <button class="check-btn">Check Out</button>
+            <button onclick="hideMenu()" class="close-btn">Close Cart</button>
             <button onclick="delItem()" id="bad" class="clear-btn">Clear Cart</button>
+            </div>
+            <div class="check-out-btn">
+                <button class="check-btn" onclick="showPayment()">Check Out</button>
             </div>
            </div>
            <!-- ends here -->
-        </div>
+           <div class="pay" id="pay">
+            <h1>Credit Card Details</h1>
+            <div class="pay-init">
+                <form>
+                    <input id="payName" required type="text" placeholder="Please Enter Your Name">
+                    <input required type="tel" placeholder="Please Enter Your Phone Number">
+                    <input required type="tel" placeholder="Please Enter Your Account Number">
+                    <input type="password" placeholder="Please Enter Your Password">
+                    <button id="sumbit" type="button">Sumbit</button>
+                </form>
+            </div>
+           </div>
         </nav>
         <div>
         <div class="text-box">
@@ -563,6 +568,6 @@
     <script src="JS/slider.js"></script>
     <script src="JS/cart.js"></script>
     <script src="JS/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="JS/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.js"></script>
 </body>
 </html>

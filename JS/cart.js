@@ -5,6 +5,13 @@ function showMenu(){
 function hideMenu(){
     carts.style.right = "-350px";
 };
+let payment = document.getElementById("pay");
+function showPayment() {
+    payment.style.right ="0"
+}
+function hidePayment() {
+    payment.style.top ="-100vh"
+}
 let bad = document.getElementById("bad");
 function delItem() {
     Iphone.style.display = "none";
@@ -37,6 +44,7 @@ function delItem() {
     watch1.style.display = "none";
     watch2.style.display = "none";
     watch3.style.display = "none";
+    counter.textContent = "0";
 }
 var login = document.getElementById("login");
 function showLogin(){
@@ -45,6 +53,7 @@ function showLogin(){
 function hideLogin(){
     login.style.top = "-100vh";
 }
+let genBtn = document.getElementById("genBtn");
 let cartBtn = document.getElementById("gen-btn");
 let Iphone = document.getElementById("iPhone");
 let Samsung = document.getElementById("samsung");
@@ -198,11 +207,6 @@ function showwatch2() {
 function showwatch3() {
     watch3.style.display = "block";
     counter.innerText = Number.parseInt (counter.innerText)+1;
-}
-function loopQuant() {
-    for (let i = 30; i =1; i++){
-        quant(i);
-    }   
 }
 // let div = document.createElement("div")
 // let products = [
