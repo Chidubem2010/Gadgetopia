@@ -30,7 +30,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background: url(view-neon-illuminated-gaming-desk-setup-with-keyboard.jpg);
+    background: url(homepage-concept-with-search-bar.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -120,9 +120,6 @@ nav div{
 .search-box .bi{
     font-size: 1.1rem;
     cursor: pointer;
-    border-right: 1px solid #555;
-    border-top: 1px solid #555;
-    border-bottom: 1px solid #555;
 }
 nav ul li{
     list-style: none;
@@ -163,7 +160,7 @@ nav ul li a{
     right: 0;
     /* text-align: center; */
     z-index: 100;
-    background: url(abstract-red-metallic-light-cyber-polygon-slash-dark-grey-shadow-design-futuristic-technology-background_33869-1747.avif);
+    background: url(laptop-with-blank-black-screen-white-table.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -174,6 +171,10 @@ nav ul li a{
     float: right;
     cursor: pointer;
     color: #fff;
+    margin-right: 10px;
+}
+.login .bi:hover{
+    transform: scale(1.1);
 }
 .login-cont h1{
     margin-top: 3%;
@@ -235,10 +236,14 @@ nav ul li a{
     cursor: pointer;
     margin-top: 30px;
     padding: 20px 45px;
-    width: 100%;
+    width: 50%;
     background-color: white;
     border-radius: 40px;
     border: none;
+}
+.login-form form button:hover{
+    width: 100%;
+    transition: ease-in-out .5s;
 }
 /* Chidozie start from here */
 .cart{  
@@ -292,7 +297,7 @@ nav ul li a{
 /* Ends Here */
 .text-box{
     position: absolute;
-    top: 40%;
+    top: 30%;
     width: 50%;
     /* color: #fff; */
     text-align: center;
@@ -637,7 +642,7 @@ form p a:hover{
     right: -100%;
     /* text-align: center; */
     z-index: 100;
-    background: /*linear-gradient(rgba(249, 246, 246, 0.8), rgba(249, 246, 246, 0.8))*/ url(download\ \(1\).jpg);
+    background: /*linear-gradient(rgba(249, 246, 246, 0.8), rgba(249, 246, 246, 0.8))*/ url(focused-young-man-paying-bill-store.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
