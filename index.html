@@ -22,7 +22,7 @@
             <li><a><i class="bi bi-cart4" onclick="showMenu()"><span id="quant"  class="quant">0</span></i></a></li>
         </ul>
         <div id="login" class="login">
-            <!-- <i class="bi bi-x" onclick="hideLogin()"></i> -->
+            <i class="bi bi-x" onclick="hideLogin()"></i>
             <div class="login-cont">
                 <h1>Login</h1>
                 <div class="login-form">
@@ -193,6 +193,7 @@
                 <div class="cart-details-2">
                     <h4>X-Box Game Console</h4>
                     <p>$335.50</p>
+                    <input type="number" placeholder="Quantity">
                 </div>
             </div>
             <div id="game2" class="cart-cont">
@@ -200,6 +201,7 @@
                 <div class="cart-details-2">
                     <h4>Play Station 5 Console</h4>
                     <p>$587.12</p>
+                    <input type="number" placeholder="Quantity">
                 </div>
             </div>
             <div id="game3" class="cart-cont">
@@ -207,6 +209,7 @@
                 <div class="cart-details-2">
                     <h4>Nintendo Switch</h4>
                     <p>$341.95</p>
+                    <input type="number" placeholder="Quantity">
                 </div>
             </div>
             <div id="pbank1" class="cart-cont">
@@ -214,6 +217,7 @@
                 <div class="cart-details-2">
                     <h4> MAh Power Bank Dual Battery</h4>
                     <p>$25.82</p>
+                    <input type="number" placeholder="Quantity">
                 </div>
             </div>
             <div id="pbank2" class="cart-cont">
@@ -221,13 +225,15 @@
                 <div class="cart-details-2">
                     <h4>Solar Power Bank</h4>
                     <p>$89.95</p>
+                    <input type="number" placeholder="Quantity">
                 </div>
             </div>
             <div id="pbank3" class="cart-cont">
                 <img src="Images/oraimo power bank.jpg">
-                <div class="cart-details">
+                <div class="cart-details-2">
                 <h4>Oraimo Massive Power Bank</h4>
                 <p>$26.43</p>
+                <input type="number" placeholder="Quantity">
                 </div>
             </div>
             <div id="watch1" class="cart-cont">
@@ -235,6 +241,7 @@
                 <div class="cart-details-2">
                     <h4>Touch Screen Smart Watch</h4>
                     <p>$20.46</p>
+                    <input type="number" placeholder="Quantity">
                 </div>
             </div>
             <div id="watch2" class="cart-cont">
@@ -242,6 +249,7 @@
                 <div class="cart-details-2">
                 <h4>Diamond Flower </h4>
                 <p>$13901.67</p>
+                <input type="number" placeholder="Quantity">
                 </div>
             </div>
             <div id="watch3" class="cart-cont">
@@ -249,6 +257,7 @@
                 <div class="cart-details-2">
                 <h4>T800 Ultra Smart Watch</h4>
                 <p>$11.77</p>
+                <input type="number" placeholder="Quantity">
                 </div>
             </div>
         </div>
@@ -262,6 +271,7 @@
            </div>
            <!-- ends here -->
            <div class="pay" id="pay">
+            <i class="bi bi-x" onclick="hideLogin()"></i>
             <h1>Credit Card Details</h1>
             <div class="pay-init">
                 <form>
@@ -269,14 +279,14 @@
                     <input required type="tel" placeholder="Please Enter Your Phone Number">
                     <input required type="tel" placeholder="Please Enter Your Account Number">
                     <input type="password" placeholder="Please Enter Your Password">
-                    <button id="sumbit" type="button">Sumbit</button>
+                    <button id="sumbit" type="button">Pay</button>
                 </form>
             </div>
            </div>
         </nav>
         <div>
         <div class="text-box">
-            <h1>Save up to 30% of your money today</h1>
+            <h1>Save up to 30% of your money this festive season. <br> Its Chirstmas and with christmas there are the discounts, come buy your gadgets this festive season</h1>
     </div>
     <div class="slides">
         <img src="Images/iphone-14-pro-max-silver.png" class="mySlides" height="400px" width="400px">
@@ -300,7 +310,7 @@
                 <img src="Images/iphone-14-pro-max-silver.png">
                 <h5>I-phone 14 Pro-max Silver</h5>
                 <p>$1,432.33</p>
-                <button onclick="show14ProMax()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
+                <button id="btn1" onclick="show14ProMax()"><i class="bi bi-bag-plus"></i>Add to Cart</button>
             </div>
             <div class="cards">
                 <img src="Images/Samsung Galaxy S23.png">

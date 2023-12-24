@@ -86,9 +86,11 @@ let watch1 = document.getElementById("watch1");
 let watch2 = document.getElementById("watch2");
 let watch3 = document.getElementById("watch3");
 let counter = document.getElementById("quant");
+let btn1 = document.getElementById("btn1");
 function show14ProMax() {
     Iphone.style.display = "block";
     counter.innerText = Number.parseInt (counter.innerText)+1;
+    btn1.style.backgroundColor = "rgb(221, 43, 43)";
 }
 function showS23() {
     Samsung.style.display = "block";
