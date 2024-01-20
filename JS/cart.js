@@ -12,6 +12,14 @@ function showPayment() {
 function hidePayment() {
     payment.style.top ="-100vh"
 }
+
+let payBtn = document.getElementById("submit");
+
+let byePage = document.getElementById("thanks");
+
+function showThanks(){
+    byePage.style.top = "0";
+}
 let bad = document.getElementById("bad");
 function delItem() {
     Iphone.style.display = "none";

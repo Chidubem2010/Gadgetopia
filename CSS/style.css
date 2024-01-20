@@ -8,6 +8,24 @@
     100%{opacity: 1;}
     0%{opacity: 0;}
   }
+  @keyframes altcolors{
+    0%{
+        color: #555;
+    }
+    25%{
+        color: gray;
+    }
+    50%{
+        color: dimgray;
+    }
+    75%{
+        color: darkslategray;
+    }
+    100%{
+        color: #555;
+    }
+
+  }
 ::-webkit-scrollbar{
     background: transparent;
     width: 5px;
@@ -15,6 +33,9 @@
 ::-webkit-scrollbar-thumb{
     background: rgb(88, 84, 84);
     border-radius: 60px;
+}
+::-webkit-scrollbar:hover{
+    width: 7px;
 }
 ::-webkit-input-placeholder{
     color: white;
@@ -99,6 +120,7 @@ nav div{
     border-radius: 4rem;
     margin-right: 1rem;
     color: black;
+    caret-color: black;
 }
 .search-box ::-webkit-input-placeholder{
     color: black;
@@ -109,7 +131,7 @@ nav div{
     border: none;
     border-radius: 4rem;
     padding: 5px;
-    color: white;
+    color: black;
     outline: none;
     padding: 2%;
     z-index: 0;
@@ -120,6 +142,10 @@ nav div{
 .search-box .bi{
     font-size: 1.1rem;
     cursor: pointer;
+    transition: 2s;
+}
+.search-box .bi:hover{
+    transform: scale(1.5);
 }
 nav ul li{
     list-style: none;
@@ -143,13 +169,14 @@ nav ul li a{
     align-items: center;
     color: #fff;
     position: absolute;
-    top: 30px;
-    left: 92%;
+    top: 31px;
+    left: 92.4%;
     height: 15px;
     width: 15px;
     /* padding: 5px 5px; */
     font-size: 7pt;
     text-align: center;
+    font-style: normal;
 }
 .login{
     display: block;
@@ -171,7 +198,7 @@ nav ul li a{
     float: right;
     cursor: pointer;
     color: #fff;
-    margin-right: 10px;
+    margin: 10px;
 }
 .login .bi:hover{
     transform: scale(1.1);
@@ -231,6 +258,7 @@ nav ul li a{
     border: 1px solid white;
     color: white;
     padding: 0 30px 0 10px;
+    outline: none;
 }
 .login-form form button{
     cursor: pointer;
@@ -240,10 +268,10 @@ nav ul li a{
     background-color: white;
     border-radius: 40px;
     border: none;
+    transition: ease-in-out .5s;
 }
 .login-form form button:hover{
     width: 100%;
-    transition: ease-in-out .5s;
 }
 /* Chidozie start from here */
 .cart{  
@@ -477,11 +505,11 @@ form p a{
     position: relative;
     cursor: pointer;
     font-size: 12pt;
+    transition: 1s;
 }
 form p a:hover{
     border: 1px solid rgba(32, 32, 30, 0.9);
     background: rgba(32, 32, 30, 0.9);
-    transition: 1s;
     border: 1px solid white;
     color: #fff;
 }
@@ -512,6 +540,7 @@ form p a:hover{
     color: white;
     padding: 10px 0;
     cursor: pointer;
+    transition: 0.5s;
 }
 .box a:hover{
     margin-left: 30px;
@@ -539,6 +568,9 @@ form p a:hover{
 }
 .footer .credit span{
     color: #555;
+    -webkit-text-stroke: 1px #555;
+    animation: altcolors 3s;
+    animation-iteration-count: infinite;
 }
 .box a .bi{
     margin-right: 10px;
@@ -683,18 +715,70 @@ form p a:hover{
     border: 1px solid white;
     color: #fff;
     font-size: 20px;
-}
-.pay-init form input :placeholder-shown{
-    color: white;
+    outline: none;
 }
 .pay-init form button{
     border: 1px solid white;
     backdrop-filter: blur(35px);
     background: transparent;
-    padding: 15px 68px;
+    padding: 15px 30px;
     border-radius: 15px;
     cursor: pointer;
     color: white;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: ease-out 0.5s;
+}
+.pay-init form button:hover{
+    background: black;
+    width: 90%;
+    border: none;
+}
+.thanks{
+    background: url(laptop-with-blank-black-screen-white-table.jpg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    /* left: -100%; */
+    /* z-index: 1000; */
+}
+.thanks h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+.thanks h4 span{
+    margin-left: 100px;
+    font-size: 15px;
+    font: 300;
+    color: #555;
+}
+.thanks button{
+    padding: 1% 3%;
+    width: 15%;
+    border-radius: 10px;
+    border: none;
+}
+.thanks button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    width: 30%;
+    transition: ease-in-out 0.9s;
+}
+button{
+    transition: all 0.2s ease;
+}
+button:active{
+    transform: scale(0.96);
 }
 /* responsive */
 @media (max-width:540px) {
